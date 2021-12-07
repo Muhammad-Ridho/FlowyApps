@@ -21,7 +21,7 @@
         android:fontFamily="montserrat_semi_bold"
         android:text="@string/app_name"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="45sp"
         android:textStyle="bold"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
