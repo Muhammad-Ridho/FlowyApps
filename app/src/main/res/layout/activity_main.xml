@@ -7,10 +7,17 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
+    <ImageView
+        android:id="@+id/headerimg"
+        android:layout_width="200pt"
+        android:layout_height="80pt"
+        android:src="@drawable/header_img"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/grid_item"/>
+        android:layout_below="@+id/headerimg"
+        tools:listitem="@layout/grid_item" />
 
 </RelativeLayout>

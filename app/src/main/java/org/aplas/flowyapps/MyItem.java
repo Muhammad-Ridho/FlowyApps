@@ -8,7 +8,7 @@ public class MyItem {
     };
 
     static String[] namaBunga = {
-            "Matahari", "Matahari", "Matahari", "Matahari", "Matahari",
+            "Matahari1", "Matahari2", "Matahari3", "Matahari4", "Matahari5",
             "Matahari", "Matahari", "Matahari","Matahari", "Matahari"
     };
 
