@@ -2,6 +2,8 @@ package org.aplas.flowyapps;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -19,47 +21,38 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private StorageReference mStorageReference;
+//    private StorageReference mStorageReference;
+
+    RecyclerView recyclerView;
+    AdapterRecyclerView adapterRecyclerView;
+    RecyclerView.LayoutManager layoutManager;
+    ArrayList<ItemModel> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mStorageReference = FirebaseStorage.getInstance().getReference().child("img/logo.png");
+        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
 
-        try {
-            final File localFile = File.createTempFile("logo", "png");
-            mStorageReference.getFile(localFile)
-                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                            Toast.makeText(MainActivity.this,"Image Retrieved", Toast.LENGTH_SHORT).show();
-                            Bitmap bitmap = BitmapFactory.decodeFile(localFile.getAbsolutePath());
-                            ((ImageView)findViewById(R.id.imageView)).setImageBitmap(bitmap);
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(MainActivity.this,"Error Occurred", Toast.LENGTH_SHORT).show();
+        layoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(layoutManager);
 
-                }
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
+        data = new ArrayList<>();
+        for (int i = 0; i < MyItem.namaBunga.length; i++){
+            data.add(new ItemModel(
+                    MyItem.namaBunga[i],
+                    MyItem.namaLatin[i],
+                    MyItem.bunga[i]
+            ));
         }
 
-
-
-
-        // Write a message to the database
-        // FirebaseDatabase database = FirebaseDatabase.getInstance();
-        // DatabaseReference myRef = database.getReference("message");
-
-        // myRef.setValue("Hello, World!");
-
+        adapterRecyclerView = new AdapterRecyclerView(data);
+        recyclerView.setAdapter(adapterRecyclerView);
 
     }
 }
