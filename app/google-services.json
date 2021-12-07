@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "301103943243",
+    "firebase_url": "https://flowyapps-default-rtdb.firebaseio.com",
+    "project_id": "flowyapps",
+    "storage_bucket": "flowyapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301103943243:android:7f44e56a7293de20a447ce",
+        "android_client_info": {
+          "package_name": "org.aplas.flowyapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301103943243-v4o7vdolt8impifbkeusfkgme5clpmbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL3o-FIJwQqKv_U4450B5pv5GkrmuZNVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301103943243-v4o7vdolt8impifbkeusfkgme5clpmbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
