@@ -16,8 +16,7 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
 
     ArrayList<ItemModel> dataItem;
 
-    public AdapterRecyclerView(Context applicationContext, ArrayList<ItemModel> data) {
-    }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtNamaBunga, txtNamaLatin;
