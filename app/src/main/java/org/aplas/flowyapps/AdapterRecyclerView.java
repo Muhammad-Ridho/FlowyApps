@@ -1,5 +1,6 @@
 package org.aplas.flowyapps;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,9 @@ import java.util.ArrayList;
 public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerView.ViewHolder> {
 
     ArrayList<ItemModel> dataItem;
+
+    public AdapterRecyclerView(Context applicationContext, ArrayList<ItemModel> data) {
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtNamaBunga, txtNamaLatin;
@@ -48,6 +52,8 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
         txt_judul.setText(dataItem.get(position).getNamaBunga());
         txt_latin.setText(dataItem.get(position).getNamaLatin());
         imgBunga.setImageResource(dataItem.get(position).getImgBunga());
+
+
 
     }
 

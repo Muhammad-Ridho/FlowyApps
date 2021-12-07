@@ -11,6 +11,18 @@ public class ItemModel {
         this.imgBunga = imgBunga;
     }
 
+    public void setNamaBunga(String namaBunga) {
+        this.namaBunga = namaBunga;
+    }
+
+    public void setNamaLatin(String namaLatin) {
+        this.namaLatin = namaLatin;
+    }
+
+    public void setImgBunga(int imgBunga) {
+        this.imgBunga = imgBunga;
+    }
+
     public String getNamaBunga() {
         return namaBunga;
     }

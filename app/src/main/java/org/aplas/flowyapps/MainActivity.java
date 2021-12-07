@@ -10,11 +10,18 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.GestureDetector;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -24,7 +31,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-//    private StorageReference mStorageReference;
+    private DatabaseReference mStorageReference;
 
     RecyclerView recyclerView;
     AdapterRecyclerView adapterRecyclerView;
@@ -53,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         adapterRecyclerView = new AdapterRecyclerView(data);
         recyclerView.setAdapter(adapterRecyclerView);
+
 
     }
 }

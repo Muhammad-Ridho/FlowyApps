@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 public class DetailActivity extends AppCompatActivity {
+    public static final String ITEM_EXTRA = "item extra";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

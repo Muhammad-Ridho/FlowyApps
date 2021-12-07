@@ -3,13 +3,13 @@ package org.aplas.flowyapps;
 public class MyItem {
 
     static int[] bunga = {
-            R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo,
-            R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo, R.drawable.logo
+            R.drawable.matahari, R.drawable.anggrek, R.drawable.kamboja, R.drawable.kembangsepatu, R.drawable.mawar,
+            R.drawable.melati, R.drawable.rosella, R.drawable.sedapmalam, R.drawable.teratai, R.drawable.tulip
     };
 
     static String[] namaBunga = {
-            "Matahari1", "Matahari2", "Matahari3", "Matahari4", "Matahari5",
-            "Matahari", "Matahari", "Matahari","Matahari", "Matahari"
+            "Bunga Matahari", "Bunga Anggek", "Bunga Kamboja", "Bunga Kembang Sepatu", "Bunga Mawar",
+            "Bunga Melati", "Bunga Rosella", "Bunga Sedap Malang","Bunga Teratai", "Bunga Tulip"
     };
 
     static String[] namaLatin = {
