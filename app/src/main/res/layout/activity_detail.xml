@@ -14,14 +14,11 @@
 
             <ImageView
                 android:id="@+id/imgDetail"
-                android:layout_width="250dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/logo" />
-
 
             <TextView
                 android:id="@+id/txtJudulDetail"
@@ -29,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Nama Bunga"
-                android:textSize="25dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
             <TextView
@@ -39,8 +35,7 @@
                 android:paddingLeft="20pt"
                 android:paddingTop="20dp"
                 android:paddingRight="20pt"
-                android:text="Deskripsi"
-                android:textSize="20dp"/>
+                android:text="Deskripsi" />
 
     </LinearLayout>
 

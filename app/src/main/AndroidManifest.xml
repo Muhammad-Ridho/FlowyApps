@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlowyApps">
         <activity
-            android:name=".DetailActivity"
+            android:name=".DetailsActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

@@ -13,7 +13,7 @@ public class MyItem {
     };
 
     static String[] namaLatin = {
-            "Helianthus annuus", "Orchidaceae", "Plumeria", "Hibiscus rosa-sinensis", "Rosa",
-            "Jasminum", "Polianthes tuberosa", "Nymphaea", "Tulipa"
+            "Helianthus annuus", "Helianthus annuus", "Helianthus annuus", "Helianthus annuus", "Helianthus annuus",
+            "Helianthus annuus", "Helianthus annuus", "Helianthus annuus", "Helianthus annuus", "Helianthus annuus"
     };
 }
